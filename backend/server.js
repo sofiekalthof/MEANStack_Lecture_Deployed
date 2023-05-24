@@ -17,13 +17,15 @@ app.use(express.json());
 
 // Initialize parameters
 // const port = eval("process.env.PORT") || 3600;
-const port = eval("process.env.PASSWORD") || 3600;
-const dbName = "mean-passwordManager";
-const collectionName = "passwords";
+const port = 3600;
+//const dbName = "mean-passwordManager";
+//const collectionName = "passwords";
+  const collectionName = process.env.ATLAS_COLLECTION
+const dbName = process.env.ATLAS_DATABASE;
 
 // database connection string
-const dbUrl = 'mongodb+srv://admin:xOuG5xzD7E4ZZCdF@mycluster.upxjjyn.mongodb.net/?retryWrites=true&w=majority'
-
+//const dbUrl = 'mongodb+srv://admin:xOuG5xzD7E4ZZCdF@mycluster.upxjjyn.mongodb.net/?retryWrites=true&w=majority'
+const dbUrl = process.env.ATLAS_URI
 
 let dbConnection;
 
