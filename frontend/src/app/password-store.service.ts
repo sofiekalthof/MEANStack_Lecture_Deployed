@@ -10,7 +10,7 @@ export class PasswordService {
   getPassword(id: number) {
     throw new Error('Method not implemented.');
   }
-  private apiUrl = 'http://localhost:3600'; // Represents the API endpoint for passwords
+  private apiUrl = 'https://mean-stack-lecture-deployed.vercel.app/'; // Represents the API endpoint for passwords
 
   constructor(private http: HttpClient) { }
 
