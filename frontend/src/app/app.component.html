@@ -1,0 +1,26 @@
+<!-- The code represents the header section of the password manager component -->
+<header class="pass-header">
+    <i class="pass-icon fa-solid fa-user-shield"></i>
+
+    <h1 class="pass-title"> Password Manager</h1>
+
+    <nav class="nav-btns">
+        <button class="list-btn" routerLink="/passwords">Password List</button>
+        <!-- Button to navigate to the password list page -->
+        <!-- <button (click)="updatePasswords()" class="add-btn"><a class="add-link" routerLink="/password-edit">Add Password</a></button> -->
+        <button class="add-btn"><a class="add-link" routerLink="/password-edit">Add Password</a></button>
+        <!-- Button to add a new password -->
+
+    </nav>
+</header>
+
+<router-outlet></router-outlet>
+<!-- Placeholder for displaying the active route content -->
+
+<!-- Comment explanations:
+The code represents the header section of the password manager component.
+It consists of a header element containing a title, an icon, and navigation buttons.
+The title "Password Manager" represents the name of the password manager.
+The icon "fa-user-shield" represents a shield icon indicating security.
+The navigation buttons include a "Password List" button that navigates to the password list page and an "Add Password" button that navigates to the password edit page to add a new password.
+The router-outlet directive is a placeholder for dynamically displaying the active route's content. -->
