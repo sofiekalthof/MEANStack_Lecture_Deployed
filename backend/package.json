@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "source": "src/server.js",
+  "source": "server.js",
   "scripts": {
     "build": "parcel build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/server"
+    "start": "nodemon server"
   },
   "keywords": [],
   "author": "",
